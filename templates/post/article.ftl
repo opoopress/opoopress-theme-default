@@ -22,7 +22,7 @@
 </#if>
 
 <#if index??>
-  <div class="entry-content">${post.excerpt}</div>
+  <div class="entry-content">${post.excerpt!post.convertedContent}</div>
   <#if post.excerpted == true>
     <footer>
       <a rel="full-article" href="${ root_url }${ post.url }">${site.excerpt_link}</a>

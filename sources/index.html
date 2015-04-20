@@ -1,9 +1,16 @@
 ---
 layout: default
+render: true
+render: true
+pagination:
+    size: 10
+    collection: post
+    #permalink: /p${pageNumber}/
+    #title_suffix_format: " - 第 ${pageNumber} 页"
 ---
 <div class="blog-index">
 <#assign index = true >
-<#list paginator.posts as post>
+<#list paginator.items as post>
 	<#assign content = post.content>
     <article>
       <#include "post/article.ftl">

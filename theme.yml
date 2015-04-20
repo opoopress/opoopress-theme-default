@@ -6,8 +6,8 @@ url-release: "http://repo.opoopress.com/releases/org/opoo/press/themes/opoopress
 url-snapshot: "http://repo.opoopress.com/snapshots/org/opoo/press/themes/opoopress-theme-default/"
 
 # The renderer/template engine of this theme.
-# Default template engine is FreeMarker, set this value to 'org.opoo.press.impl.FreeMarkerRenderer' or comment below.
-# renderer: "org.opoo.press.impl.FreeMarkerRenderer"
+# Default template engine is FreeMarker, set this value to 'org.opoo.press.renderer.FreeMarkerRenderer' or comment below.
+# renderer: "org.opoo.press.renderer.FreeMarkerRenderer"
 
 
 #######################
@@ -36,7 +36,7 @@ navs: {"Blog": "/", "Archives": "/archives/", "Sample Page": "/sample-page.html"
 
 # list each of the sidebar modules you want to include, in the order you want them to appear.
 # To add custom asides, create files in 'templates/asides' folder and add them to the list like 'custom_aside_name.ftl'
-default_asides: [recent_posts.ftl, github.ftl, delicious.ftl, pinboard.ftl, googleplus.ftl, categories.ftl]
+default_asides: [recent_posts.ftl, github.ftl, delicious.ftl, pinboard.ftl, googleplus.ftl, categories.ftl, tags.ftl]
 
 # Blog index page uses default asides, uncomment the line below and add array with the asides you want to use.
 # blog_index_asides:
@@ -62,17 +62,8 @@ refreshRelativeTimes: true
 # The template file of new page. default 'new_page.ftl'
 # new_page_template: new_page.ftl
 
-# The title prefix of category page.
-# category_page_title_prefix: "Category: "
-
-# The template file of the category page, default 'category.ftl'
-# category_page_template: category.ftl
-
-# The title prefix of tag page.
-# tag_page_title_prefix: "Tag: "
-
-# The template file of the tag page, default 'tag.ftl'
-# tag_page_template: tag.ftl
+# The tempate file of custom layout, no default value.
+# Sample: new_doc_template: new_doc.ftl
 
 
 # ----------------------------#

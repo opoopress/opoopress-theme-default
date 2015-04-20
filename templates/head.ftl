@@ -4,7 +4,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="<#if (site.locale)??>${site.locale.language}<#else>en</#if>"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title><#if (page.title)??>${page.title} - </#if>${site.title}</title>
+  <title><#if (page.title)??>${page.title}${page.title_suffix!} | </#if>${site.title}<#if !(page.title)??>${page.title_suffix!}</#if></title>
   <meta name="author" content="${site.author}">
   <#-- maybe content?substring(0,150) -->
   <#if site.description?? && page.url == '/'><meta name="description" content="${site.description}"><#elseif page.description??><meta name="description" content="${page.description}"></#if>
@@ -24,7 +24,7 @@
   <link href="${ root_url }/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-  <link href="//dn-opstatic.qbox.me/themes/default/stylesheets/fonts.css" rel="stylesheet" type="text/css">
+  <link href="${ root_url }/stylesheets/fonts.css" rel="stylesheet" type="text/css">
   <!--
   <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic|PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
   -->

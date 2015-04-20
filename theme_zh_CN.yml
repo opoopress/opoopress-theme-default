@@ -6,8 +6,8 @@ url-release: "http://repo.opoopress.com/releases/org/opoo/press/themes/opoopress
 url-snapshot: "http://repo.opoopress.com/snapshots/org/opoo/press/themes/opoopress-theme-default/"
 
 # 当前主题的模板引擎。
-# 默认的默认引擎是 FreeMarker，设置该值为 'org.opoo.press.impl.FreeMarkerRenderer' 或者注释以下行即可。
-# renderer: "org.opoo.press.impl.FreeMarkerRenderer"
+# 默认的默认引擎是 FreeMarker，设置该值为 'org.opoo.press.renderer.FreeMarkerRenderer' 或者注释以下行即可。
+# renderer: "org.opoo.press.renderer.FreeMarkerRenderer"
 
 
 #######################
@@ -36,7 +36,7 @@ navs: {"文章": "/", "归档": "/archives/", "示例页面": "/sample-page.html
 
 # 默认的侧边栏所包含的块。
 # 被设置的块应该位于  [模板路径]/asides 目录，如 'templates/asides'.
-default_asides: [recent_posts.ftl, github.ftl, delicious.ftl, pinboard.ftl, googleplus.ftl, categories.ftl]
+default_asides: [recent_posts.ftl, github.ftl, delicious.ftl, pinboard.ftl, googleplus.ftl, categories.ftl, tags.ftl]
 
 # 首页侧边栏包含的块，未设置时使用 'default_asides'
 # blog_index_asides:
@@ -62,17 +62,8 @@ refreshRelativeTimes: true
 # 新页面的模板文件， 默认值 'new_page.ftl'
 # new_page_template: new_page.ftl
 
-# 分类页面标题的前缀，有默认值，可通过以下配置覆盖。
-# category_page_title_prefix: "分类："
-
-# 分类页面的模板，默认值 'category.ftl'
-# category_page_template: category.ftl
-
-# 标签页面标题的前缀，有默认值，可通过以下配置覆盖。
-# tag_page_title_prefix: "标签："
-
-# 标签页面的模板，默认值 'tag.ftl'
-# tag_page_template: tag.ftl
+# 新的自定义的 layout 的模板文件，无默认值。
+# 示例: new_doc_template: new_doc.ftl
 
 
 # ----------------------------#

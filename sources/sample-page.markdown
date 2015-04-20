@@ -6,6 +6,7 @@ date: 2013-06-23 11:20
 sidebar: false
 xyz: "This is a custom text."
 footer: false
+render: true
 ---
 
 This is a sample page.
