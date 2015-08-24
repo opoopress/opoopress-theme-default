@@ -17,4 +17,5 @@ The default theme for OpooPress 2.0+.
   ```shell
   cd /path/to/mysite
   git clone https://github.com/opoopress/opoopress-theme-default.git themes/default
+  mvn op:theme -Dname=default
   ```
